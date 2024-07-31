@@ -1,0 +1,125 @@
+/* public/styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e5ddd5; /* WhatsApp-like background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.chat-header {
+    background: #075e54; /* WhatsApp header color */
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#username-display {
+    font-size: 14px;
+    color: #fff;
+}
+
+.chat-messages {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+    overflow-y: auto;
+    flex: 1;
+    background: #e5ddd5; /* WhatsApp message background color */
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-messages li {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message-self {
+    background: #dcf8c6; /* WhatsApp self-message color */
+    margin-left: auto;
+    text-align: right;
+    align-self: flex-end;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 75%;
+    clear: both;
+}
+
+.message-other {
+    background: #fff;
+    margin-right: auto;
+    text-align: left;
+    align-self: flex-start;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 75%;
+    clear: both;
+}
+
+.message-username {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000; /* Adjust color if needed */
+    margin-bottom: 5px;
+}
+
+.message-text {
+    font-size: 16px;
+}
+
+.chat-form {
+    display: flex;
+    border-top: 1px solid #ddd;
+    background: #fff;
+}
+
+.chat-input {
+    flex: 1;
+    border: none;
+    padding: 15px;
+    border-radius: 0;
+    outline: none;
+    font-size: 16px;
+    background: #f0f0f0;
+}
+
+.chat-send-button {
+    background: #075e54; /* WhatsApp send button color */
+    border: none;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 0;
+    font-size: 16px;
+}
+
+.chat-send-button:hover {
+    background: #004d40; /* Darker shade on hover */
+}
+
+.chat-input:focus {
+    border-color: #075e54;
+}

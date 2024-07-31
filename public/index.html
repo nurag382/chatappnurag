@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANURAG Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>ANURAG Chat</h1>
+        </div>
+        <ul id="messages" class="chat-messages"></ul>
+        <form id="form" class="chat-form" action="">
+            <input id="input" class="chat-input" autocomplete="off" placeholder="Type a message..." />
+            <button class="chat-send-button">Send</button>
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
